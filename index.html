@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Meu Site HTML</title>
+    <link ref="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -15,6 +16,7 @@
     </pre>
 
     <p>O documento HTML em si começa com <code>&lt;html&gt;</code> e termina com <code>&lt;/html&gt;</code>.</p>
+    <h3>Por exemplo:</h3>
     <pre>
         <code>&lt;html&gt;
   ...
@@ -32,15 +34,16 @@
 
 <h1>Elementos HTML</h1>
 
-<p>Um elemento HTML é definido por uma tag de início</p>
+<p>Um elemento HTML é definido por uma tag de início.</p>
 <p>O elemento HTML é tudo, desde a tag inicial até a tag final:</p>
+<h3>Por exemplo:</h3>
 <pre>
     <code>&lt;tagname&gt;O conteúdo vai aqui...&lt;/tagname&gt;</code>
 </pre>
 
-<p>Exemplos de alguns elementos HTML:</p>
+
 <pre>
-    <code>&lt;h1&gt;Meu Primeira Cabeçada&lt;/h1&gt;
+    <code>&lt;h1&gt;Meu primeiro cabeçalho.&lt;/h1&gt;</code>
 &lt;p&gt;O meu primeiro parágrafo.&lt;/p&gt;</code>
 </pre>
 
@@ -48,20 +51,22 @@
 
 <h1>Atributos HTML</h2>
 <p>Os atributos HTML fornecem informações adicionais sobre elementos HTML.</p>
-<p>Os atributos são sempre especificados em a tag de início</p>
-<p>Os atributos geralmente vêm em pares nome/valor como: name="valor"</p>
+<p>Os atributos são sempre especificados em a tag de início.</p>
+<p>Os atributos geralmente vêm em pares nome/valor como: name="valor".</p>
+<h3>Por exemplo:</h3>
 <p>A tag <code>&lt;a&gt;</code> define um hiperlink. O atributo <code>href</code> especifica o URL da página para onde o link direciona:</p>
     <pre>
-        <code>&lt;a href="https://www.w3schools.com"&gt;Visit W3Schools&lt;/a&gt;</code>
+        <code>&lt;a href="https://www.w3schools.com"&gt;Visite W3Schools&lt;/a&gt;</code>
     </pre>
 
     <!-- 4 - HTML Headings -->
 
     
 <h1>HTML Headings</h1>
-<p>cabeçalhos HTML são títulos ou legendas que você deseja exibir em uma página da web.</p>
+<p>Os cabeçalhos HTML são títulos ou legendas que você deseja exibir em uma página da web.</p>
 <p>Os cabeçalhos HTML são definidos com as tags <code>&lt;h1&gt;</code> até <code>&lt;h6&gt;</code>.</p>
     <p><code>&lt;h1&gt;</code> define o título mais importante. <code>&lt;h6&gt;</code> define o título menos importante.</p>
+    <h3>Por exemplo:</h3>
 
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
@@ -74,17 +79,17 @@
 
 <h1>HTML Parágrafos</h1>
 <p>Um parágrafo sempre começa em uma nova linha e geralmente é um bloco de texto.</p>
-<p>O elemento HTML <code>&lt;p&gt;</code> define um parágrafo. Um parágrafo sempre começa em uma nova linha, e os navegadores adicionam automaticamente algum espaço em branco (uma margem) antes e depois de um parágrafo.</p>
-<h3>Exemplos:</h3>
-<p><code>&lt;p&gt;</code> This is a paragraph.<code>&lt;/p&gt;</code></p>
-    <p><code>&lt;p&gt;</code>This is another paragraph.<code>&lt;p&gt;</code></p>
+<p>O elemento HTML <code>&lt;p&gt;</code> define um parágrafo. <br>Um parágrafo sempre começa em uma nova linha, e os navegadores adicionam automaticamente algum espaço em branco (uma margem) antes e depois de um parágrafo.</p>
+<h3>Por exemplo:</h3>
+<p><code>&lt;p&gt;</code> Este é um parágrafo.<code>&lt;/p&gt;</code></p>
+    <p><code>&lt;p&gt;</code>Este é um outro parágrafo..<code>&lt;p&gt;</code></p>
 
     <!-- HTML Styles -->
 
 <h1>HTML Styles</h1>
 <p>O atributo HTML Style é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.</p>
-
-    <p>O atributo <code>style</code> tem a seguinte sintaxe:</p>
+<h3>Por exemplo:</h3>
+    <p>O atributo <code>&lt;style&gt;</code> tem a seguinte sintaxe:</p>
     
     <pre>
         <code>&lt;tagname style="propriedade:valor;"&gt;</code>
@@ -92,7 +97,7 @@
 
     <p>A propriedade é uma propriedade CSS. O valor é um valor CSS.</p>
 
-    <p>Por exemplo:</p>
+    
     <pre>
         <code>&lt;p style="color:red; font-size:16px;"&gt;Este é um parágrafo com estilo.&lt;/p&gt;</code>
     </pre>
@@ -102,7 +107,7 @@
 <h1>Formatação HTML</h1>
 <P>HTML contém vários elementos para definir o texto com um significado especial.</P>
 <p>Elementos de formatação foram projetados para exibir tipos especiais de texto: 
-    
+    <h3>Por exemplo:</h3>
 
 <ul>
 
@@ -123,14 +128,6 @@
 <!-- HTML Quotations -->
 
 <h1>HTML Quotation e Citação</h1>
-<p>O elemento HTML <code>&lt;blockquote&gt;</code> uma seção citada de outra fonte. Os navegadores geralmente recuam <code>&lt;blockquote&gt;</code>elementos.</p>
-
-<h3>Por exemplo:</h3>
-<p><code>&lt;blockquote&gt;</code> cite="http://www.worldwildlife.org/who/index.html"> <br>
-   
-<li>For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live. <code>&lt;/blockquote&gt;</code></li>
-</p>
-    
 
 <h2>HTML <code>&lt;q&gt;</code> para citações curtas</h2>
 <p>A tag HTML <code>&lt;q&gt;</code> define uma citação curta.
@@ -140,6 +137,37 @@ Os navegadores normalmente inserem aspas ao redor da citação.</p>
 <p><code>&lt;p&gt;</code>WWF's goal is to: <code>&lt;q&gt;</code> Build a future where people live in harmony with nature.<code>&lt;/q&gt;</code><code>&lt;/p&gt;</code></p>
 
 <h2>HTML <code>&lt;abbr&gt;</code> para abreviações</h2>
+<p>Define uma abreviação ou um acrônimo, como "HTML", "CSS", "Sr.", "Dr.". <br>A marcação de abreviações pode fornecer informações úteis aos navegadores, tradução sistemas e mecanismos de pesquisa.</p>
+<h3>Por exemplo:</h3>
+<p><code>&lt;p&gt;</code> The <code>&lt;abbr</code> title="World Health Organization"<code>&gt;</code>WHO<code>&lt;/abbr&gt;</code> was founded in 1948.<code>&lt;/p&gt;</code></p>
+
+<!-- HTML Comments -->
+
+<h1> HTML Comentários </h1>
+<p>Os comentários HTML não são exibidos no navegador, mas podem ajude a documentar seu código-fonte HTML.</p>
+<h3>Por exemplo:</h3>
+<p><code>&lt;</code>!-- Escreva seu comentário aqui --<code>&gt;</code></p>
+<p>Observe que há um ponto de exclamação (!) na tag inicial, mas não na tag inicial etiqueta final.</p>
+<p>Comentários podem ser usados para ocultar conteúdo.</p>
+
+<!-- HTML Colors -->
+
+<h1>HTML Cores</h1>
+<p>As cores HTML são especificadas com nomes de cores predefinidos ou com valores RGB, HEX, HSL, RGBA ou HSLA.<br> Em HTML, uma cor pode ser especificada usando o nome dela, bem como pode-se definir a cor do texto, das bordas e a cor de fundo para elementos HTML.</p>
+<h3>Exemplo de códigos:</h3>
+
+<li><code>&lt;</code>h1 style="background-color:DodgerBlue;">Hello World<code>&lt;/h1&gt;</code><br></li>
+<li><code>&lt;</code>h1 style="color:Tomato;">Hello World<code>&lt;/h1&gt;</code><br></li>
+<li><code>&lt;</code>h1 style="border:2px solid Tomato;">Hello World<code>&lt;/h1&gt;</code></li><br>
+<li><code>&lt;</code>h1 style="background-color:<strong>rgb</strong>(255, 99, 71);">...<code>&lt;/h1&gt;</code><br></li>
+<li><code>&lt;</code>h1 style="background-color:<strong>#ff6347</strong>;">...<code>&lt;/h1&gt;</code><br></li>
+<li><code>&lt;</code>h1 style="background-color:<strong>hsl</strong>(9, 100%, 64%);">...<code>&lt;/h1&gt;</code><br></li>
+<li><code>&lt;</code>h1 style="background-color:<strong>rgba</strong>(255, 99, 71, 0.5);">...<code>&lt;/h1&gt;</code><br></li>
+<li><code>&lt;</code>h1 style="background-color:<strong>hsla</strong>(9, 100%, 64%, 0.5);">...<code>&lt;/h1&gt;</code><br></li>
+
+<!-- HTML Links -->
+
+<h1>HTML Links</h1>
 
 </body>
 </html>
