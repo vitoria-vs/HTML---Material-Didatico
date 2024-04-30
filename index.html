@@ -254,7 +254,70 @@ Os navegadores normalmente inserem aspas ao redor da citação.</p>
 
 <!-- HTML Block & Inline -->
 
-<h1>Bloco HTML e Inline</h1>
+<h1>Bloco HTML e elementos inline</h1>
+<p>Cada elemento HTML possui um valor de exibição padrão, dependendo do tipo de elemento.</p>
+<p>Os dois valores de exibição mais comuns são bloco e inline.</p>
+
+<h2>Elementos em nível de bloco:</h2>
+<p>Um elemento em nível de bloco sempre começa em uma nova linha e os navegadores adicionam automaticamente algum espaço (uma margem) antes e depois do elemento.</p>
+<p>Um elemento de nível de bloco sempre ocupa toda a largura disponível (estende-se para a esquerda e para a direita tanto quanto possível).</p>
+<p>Dois elementos de bloco comumente usados ​​são: &lt;p&gt; e &lt;div&gt;.</p>
+<p>O &lt;div&gt;elemento define uma divisão ou seção em um documento HTML</p>
+
+
+<h2>Elementos inline:</h2>
+
+<p>Um elemento inline não começa em uma nova linha.
+
+    Um elemento inline ocupa apenas a largura necessária.</p>
+<h3>Por exemplo:</h3>
+<p>&lt;span&gt;Hello World&lt;/span&gt;</p>
+
+<!--HTML Div  -->
+
+<h1>HTML Div</h1>
+<p>O &lt;div&gt; elemento é usado como contêiner para outros elementos HTML.</p>
+<p>O &lt;div&gt;elemento é por padrão um elemento de bloco, o que significa que ocupa toda a largura disponível e vem com quebras de linha antes e depois.</p>
+<p>O &lt;div&gt;elemento não possui atributos obrigatórios, mas style, class e id são comuns.</p>
+<p>Ele também  é frequentemente usado para agrupar seções de uma página da web.</p>
+ 
+<h3>Por exemplo:</h3>
+<p>&lt;div&gt;<br>
+    &lt;h2&gt;London&lt;/h2&gt;<br>
+    &lt;p&gt;London is the capital city of England.&lt;/p&gt;<br>
+    &lt;p&gt;London has over 13 million inhabitants.&lt;/p&gt;<br>
+    &lt;/div&gt;<br>
+    &lt;/p&gt;<br>
+
+<p><strong>Alinhar ao centro um elemento &lt;div&gt;:</strong></p>
+
+<h3>Por exemplo:</h3>
+
+<p><strong>&lt;style&gt; <br>
+    div { <br>
+      width:300px; <br>
+      margin:auto; <br>
+    } <br>
+    &lt;/style&gt; </strong></p>
+
+<p>Você também pode ter muitos &lt;div&gt; contêineres na mesma página.</p>
+ <h2>Float:</h2>
+
+ <p>A propriedade float no CSS não foi originalmente criada para alinhar &lt;div&gt; elementos lado a lado, mas tem sido usada para esse propósito há muitos anos.</p>
+<p>A propriedade CSS float é usada para posicionar e formatar conteúdo e permite que os elementos flutuem próximos uns dos outros em vez de uns sobre os outros.</p>
+
+<p> <strong>&lt;style&gt; <br>
+    .mycontainer { <br>
+        width:100%;<br>
+        overflow:auto;<br>
+      }<br><br>
+      .mycontainer div {<br>
+        width:33%;<br>
+        float:left;<br>
+      }<br>
+      &lt;/style&gt; </strong></p>
+
+</p>
 
 </body>
 </html>
