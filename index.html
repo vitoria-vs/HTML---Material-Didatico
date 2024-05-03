@@ -49,7 +49,7 @@
 
 <!-- HTML  Attributes -->
 
-<h1>Atributos HTML</h2>
+<h1>Atributos HTML</h1>
 <p>Os atributos HTML fornecem informações adicionais sobre elementos HTML.</p>
 <p>Os atributos são sempre especificados em a tag de início.</p>
 <p>Os atributos geralmente vêm em pares nome/valor como: name="valor".</p>
@@ -680,6 +680,285 @@ Os navegadores normalmente inserem aspas ao redor da citação.</p>
     
     <input type="submit" value="Enviar">
 </form>
+
+<!-- HTML Form Attributes -->
+
+<h1>Atributos de Formulários HTML</h1>
+
+<p>Aqui está o código HTML para criar um formulário simples com alguns atributos:</p>
+
+<pre>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Atributos de Formulários HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Atributos de Formulários HTML&lt;/h1&gt;
+
+&lt;form action="/processar_formulario" method="post"&gt;
+    &lt;label for="nome"&gt;Nome:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text" id="nome" name="nome" placeholder="Digite seu nome" required&gt;&lt;br&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="email" id="email" name="email" placeholder="Digite seu email" required&gt;&lt;br&gt;
+    
+    &lt;label for="mensagem"&gt;Mensagem:&lt;/label&gt;&lt;br&gt;
+    &lt;textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem"&gt;&lt;/textarea&gt;&lt;br&gt;
+    
+    &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+
+<form action="/processar_formulario" method="post">
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Digite seu email" required><br>
+    
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem"></textarea><br>
+    
+    <button type="submit">Enviar</button>
+</form>
+
+<!-- HTML Form Elements -->
+
+<h1>Elementos de Formulário HTML</h1>
+
+<p>Aqui está o código HTML para criar um formulário simples com alguns elementos de formulário:</p>
+
+<pre>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Elementos de Formulário HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Elementos de Formulário HTML&lt;/h1&gt;
+
+&lt;form action="/processar_formulario" method="post"&gt;
+    &lt;label for="nome"&gt;Nome:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text" id="nome" name="nome"&gt;&lt;br&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+    
+    &lt;label for="sexo"&gt;Sexo:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="radio" id="masculino" name="sexo" value="masculino"&gt; Masculino&lt;br&gt;
+    &lt;input type="radio" id="feminino" name="sexo" value="feminino"&gt; Feminino&lt;br&gt;
+    
+    &lt;label for="interesse"&gt;Interesses:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="checkbox" id="esporte" name="interesse" value="esporte"&gt; Esporte&lt;br&gt;
+    &lt;input type="checkbox" id="musica" name="interesse" value="musica"&gt; Música&lt;br&gt;
+    
+    &lt;label for="mensagem"&gt;Mensagem:&lt;/label&gt;&lt;br&gt;
+    &lt;textarea id="mensagem" name="mensagem" rows="4" cols="50"&gt;&lt;/textarea&gt;&lt;br&gt;
+    
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+
+<form action="/processar_formulario" method="post">
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome"><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    
+    <label for="sexo">Sexo:</label><br>
+    <input type="radio" id="masculino" name="sexo" value="masculino"> Masculino<br>
+    <input type="radio" id="feminino" name="sexo" value="feminino"> Feminino<br>
+    
+    <label for="interesse">Interesses:</label><br>
+    <input type="checkbox" id="esporte" name="interesse" value="esporte"> Esporte<br>
+    <input type="checkbox" id="musica" name="interesse" value="musica"> Música<br>
+    
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br>
+    
+    <input type="submit" value="Enviar">
+</form>
+
+<!-- HTML Input Types -->
+
+<h1>Tipos de Entrada de Formulário HTML</h1>
+
+<p>Aqui está o código HTML para criar um formulário simples com diferentes tipos de entrada:</p>
+
+<pre>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Tipos de Entrada de Formulário HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Tipos de Entrada de Formulário HTML&lt;/h1&gt;
+
+&lt;form action="/processar_formulario" method="post"&gt;
+    &lt;label for="nome"&gt;Nome:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text" id="nome" name="nome"&gt;&lt;br&gt;
+    
+    &lt;label for="senha"&gt;Senha:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="password" id="senha" name="senha"&gt;&lt;br&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+    
+    &lt;label for="idade"&gt;Idade:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="number" id="idade" name="idade"&gt;&lt;br&gt;
+    
+    &lt;label for="sexo"&gt;Sexo:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="radio" id="masculino" name="sexo" value="masculino"&gt; Masculino&lt;br&gt;
+    &lt;input type="radio" id="feminino" name="sexo" value="feminino"&gt; Feminino&lt;br&gt;
+    
+    &lt;label for="data_nascimento"&gt;Data de Nascimento:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="date" id="data_nascimento" name="data_nascimento"&gt;&lt;br&gt;
+    
+    &lt;label for="foto"&gt;Foto de Perfil:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="file" id="foto" name="foto"&gt;&lt;br&gt;
+    
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+
+<form action="/processar_formulario" method="post">
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome"><br>
+    
+    <label for="senha">Senha:</label><br>
+    <input type="password" id="senha" name="senha"><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    
+    <label for="idade">Idade:</label><br>
+    <input type="number" id="idade" name="idade"><br>
+    
+    <label for="sexo">Sexo:</label><br>
+    <input type="radio" id="masculino" name="sexo" value="masculino"> Masculino<br>
+    <input type="radio" id="feminino" name="sexo" value="feminino"> Feminino<br>
+    
+    <label for="data_nascimento">Data de Nascimento:</label><br>
+    <input type="date" id="data_nascimento" name="data_nascimento"><br>
+    
+    <label for="foto">Foto de Perfil:</label><br>
+    <input type="file" id="foto" name="foto"><br>
+    
+    <input type="submit" value="Enviar">
+</form>
+
+<!-- HTML Input Attributes -->
+
+<h1>Atributos de Formulário HTML</h1>
+     <p>Esta parte resume os atributos importantes dos formulários HTML.</p>
+    <ul>
+        <li><strong>Ação:</strong> <code>&lt;form action=""&gt;</code></li>
+        <li><strong>Método:</strong> <code>&lt;form method="GET/POST"&gt;</code></li>
+        <li><strong>Alvo:</strong> <code>&lt;form target="_blank/self/parent/top/name"&gt;</code></li>
+        <li><strong>Codificação:</strong> <code>&lt;form enctype="multipart/form-data"&gt;</code></li>
+        <li><strong>Autocompletar:</strong> <code>&lt;form autocomplete="on/off"&gt;</code></li>
+        <li><strong>Validação:</strong> <code>&lt;form novalidate&gt;</code></li>
+        <li><strong>Conexão de Elementos:</strong> <code>&lt;input/form&gt;</code></li>
+    </ul>
+   
+
+
+    <h3>Atributo de Valor</h3>
+    <code>
+        &lt;form&gt;<br>
+        &nbsp;&nbsp;&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;<br>
+        &nbsp;&nbsp;&lt;input type="text" id="fname" name="fname" value="John"&gt;&lt;br&gt;<br>
+        &nbsp;&nbsp;&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;<br>
+        &nbsp;&nbsp;&lt;input type="text" id="lname" name="lname" value="Doe"&gt;<br>
+        &lt;/form&gt;
+    </code>
+
+    <h3>Atributo Somente Leitura</h3>
+    <code>
+        &lt;form&gt;<br>
+        &nbsp;&nbsp;&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;<br>
+        &nbsp;&nbsp;&lt;input type="text" id="fname" name="fname" value="John" readonly&gt;&lt;br&gt;<br>
+        &nbsp;&nbsp;&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;<br>
+        &nbsp;&nbsp;&lt;input type="text" id="lname" name="lname" value="Doe"&gt;<br>
+        &lt;/form&gt;
+    </code>
+
+    <h3>Atributo Desabilitado</h3>
+    <code>
+        &lt;form&gt;<br>
+        &nbsp;&nbsp;&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;<br>
+        &nbsp;&nbsp;&lt;input type="text" id="fname" name="fname" value="John" disabled&gt;&lt;br&gt;<br>
+        &nbsp;&nbsp;&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;<br>
+        &nbsp;&nbsp;&lt;input type="text" id="lname" name="lname" value="Doe"&gt;<br>
+        &lt;/form&gt;
+    </code>
+
+<!-- Input Form Attributes -->
+
+<h1>Formulário de entrada HTML * Atributos</h1>
+
+<h3>Atributo de Ação</h3>
+<p>O atributo <code>action</code> especifica para onde enviar os dados do formulário quando ele é enviado.</p>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h3>Atributo de Método</h3>
+<p>O atributo <code>method</code> especifica como enviar os dados do formulário (como dados de formulário HTTP).</p>
+<form action="/action_page.php" method="get">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h3>Atributo de Alvo</h3>
+<p>O atributo <code>target</code> especifica onde abrir a resposta recebida após o envio do formulário.</p>
+<form action="/action_page.php" target="_blank">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<form action="/action_page.php" method="get" target="_blank" enctype="multipart/form-data" novalidate>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" autocomplete="on"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" autocomplete="off"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+
+<!-- HTML Canvas -->
 
 </body>
 </html>
