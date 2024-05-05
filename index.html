@@ -955,10 +955,128 @@ Os navegadores normalmente inserem aspas ao redor da citação.</p>
   <input type="submit" value="Submit">
 </form>
 
-
-
-
 <!-- HTML Canvas -->
+
+<h1>HTML Canvas</h1>
+
+<p>O elemento HTML &lt;canvas&gt; é usado para desenhar gráficos, em tempo real, via script (geralmente JavaScript).</p>
+
+<h3>Desenho de um Retângulo</h3>
+<p>Um retângulo é desenhado com quatro linhas. Para desenhar um retângulo, use as seguintes propriedades e métodos:</p>
+<ul>
+  <li>`beginPath()`: Inicia um caminho.</li>
+  <li>`moveTo()`: Define o ponto de partida do caminho.</li>
+  <li>`lineTo()`: Define o ponto final do caminho.</li>
+  <li>`closePath()`: Cria um caminho de volta ao ponto de partida.</li>
+  <li>`stroke()`: Desenha as bordas do retângulo.</li>
+</ul>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.rect(20, 20, 150, 100);
+ctx.stroke();
+</script>
+
+<h3>Desenho de um Gradiente</h3>
+<p>Você pode usar gradientes para preencher formas desenhadas em um &lt;canvas&gt;:</p>
+<ul>
+  <li>`createLinearGradient(x,y,x1,y1)`: Cria um objeto de gradiente linear.</li>
+  <li>`addColorStop()`: Especifica uma cor para parar em um gradiente.</li>
+</ul>
+
+<canvas id="myCanvas2" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas2");
+var ctx = canvas.getContext("2d");
+var grd = ctx.createLinearGradient(0, 0, 200, 0);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
+</script>
+
+<!-- HTML SVG -->
+
+<h1>HTML SVG</h1>
+
+<P>SVG define gráficos baseados em vetores em XML, que pode ser incorporado diretamente em páginas HTML.<br>
+
+    Os gráficos SVG são escaláveis e não perdem qualidade se forem ampliados ou redimensionados:</P>
+
+<h3>Exemplo de Retângulo SVG:</h3>
+
+&lt;svg width="400" height="110"&gt;<br>
+  &lt;rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" /&gt;<br>
+&lt;/svg&gt;<br>
+</code></pre>
+<br>
+
+<svg width="400" height="110">
+    <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+  </svg>
+  
+<h3>Exemplo de Círculo SVG:</h3>
+
+&lt;svg width="400" height="110"&gt;<br>
+  &lt;circle cx="200" cy="55" r="50" stroke="black" stroke-width="2" fill="red" /&gt;<br>
+&lt;/svg&gt;<br>
+<br>
+<svg width="400" height="110">
+    <circle cx="200" cy="55" r="50" stroke="black" stroke-width="2" fill="red" />
+  </svg>
+
+  <!-- HTML Media -->
+
+<h1>HTML Multimídia</h1>
+
+<p>Multimídia na web é som, música, vídeos, filmes e animações.</p>
+
+<p>Multimídia vem em muitos formatos diferentes. Pode ser quase tudo o que você puder ouvir ou ver, como imagens, música, etc, som, vídeos, discos, filmes, animações e muito mais.<br>
+
+    As páginas da Web geralmente contêm elementos multimídia de diferentes tipos e formatos.
+    
+    </p>
+
+
+<h3>Vídeo HTML</h3>
+
+<pre><code>&lt;video width="320" height="240" controls&gt;
+    &lt;source src="movie.mp4" type="video/mp4"&gt;
+    &lt;source src="movie.ogg" type="video/ogg"&gt;
+    Your browser does not support the video tag.
+  &lt;/video&gt;
+  </code></pre>
+
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<h3>Audio HTML</h3>
+
+<pre><code>&lt;audio controls&gt;
+    &lt;source src="horse.mp3" type="audio/mpeg"&gt;
+    &lt;source src="horse.ogg" type="audio/ogg"&gt;
+    Your browser does not support the audio element.
+  &lt;/audio&gt;
+  </code></pre>
+
+
+<audio controls>
+    <source src="horse.mp3" type="audio/mpeg">
+    <source src="horse.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <!-- HTML Drag/Drop -->
+
+  <h1></h1>
 
 </body>
 </html>
